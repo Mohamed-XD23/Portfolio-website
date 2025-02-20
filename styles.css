@@ -105,6 +105,9 @@ section h2 {
     list-style: disc;
     padding-left: 20px;
 }
+#contact h2{
+    text-align: center;
+}
 
 /* Form Styling */
 form {
@@ -115,7 +118,7 @@ form {
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 70%;
     padding: 8px;
     border: 2px solid #333; /* Stylish border */
     border-radius: 8px;
@@ -128,9 +131,9 @@ form button {
     background-color: #333;
     color: #fff;
     border: none;
-    width: 50%;
+    width: 30%;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 16px;
     cursor:pointer ;
     transition: background-color 0.3s ease;
@@ -138,6 +141,7 @@ form button {
 
 form button:hover {
     background-color: cyan;
+    color: #333;
 }
 
 form input::placeholder, form textarea::placeholder {
@@ -149,8 +153,8 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 4px;
+    margin-top: 8px;
 }
 
 footer p {
@@ -158,6 +162,13 @@ footer p {
 }
 
 /* Responsive Design */
+
+@media (max-width: 500px) {
+    form input, form textarea, form button {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -166,9 +177,5 @@ footer p {
 
     section {
         padding: 15px;
-    }
-
-    form input, form textarea, form button {
-        width: 100%;
     }
 }
